@@ -7,11 +7,11 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>emp-common</module>
-        <module>emp-web</module>
         <module>emp-common-config</module>
         <module>emp-common-service</module>
         <module>emp-common-shiro</module>
         <module>emp-common-web</module>
+        <module>emp-web</module>
     </modules>
     <packaging>pom</packaging>
 

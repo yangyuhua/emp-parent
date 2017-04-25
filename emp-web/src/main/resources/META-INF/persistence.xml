@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             version="2.0" xmlns="http://java.sun.com/xml/ns/persistence"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+    <persistence-unit name="frame" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <properties>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <!-- 			<property name="hibernate.dialect" value="org.hibernate.dialect.HSQLDialect" /> -->
+            <!-- 			<property name="hibernate.dialect" value="org.hibernate.dialect.SQLServerDialect" /> -->
+            <property name="hibernate.dialect" value="org.emp.web.util.SQLServer2008Dialect"/>
+            <!-- 二级缓存ehcache -->
+            <!-- 未启用二级缓存 -->
+            <property name="hibernate.cache.region.factory_class"
+                      value="org.hibernate.cache.internal.NoCachingRegionFactory"/>
+
+
+            <!-- 启用 org.hibernate.id.enhanced包下的Id生成策略，以获得数据库移植性和优化。 -->
+            <property name="hibernate.id.new_generator_mappings" value="true"/>
+            <!-- 			<property name="javax.persistence.schema-generation.scripts.action" value="drop-and-create"/> -->
+            <!-- 			<property name="javax.persistence.schema-generation.create-source" value="metadata"/> -->
+            <!-- 			<property name="javax.persistence.schema-generation.scripts.create-target" value="d:/create-schema.sql"/> -->
+            <!-- 			<property name="javax.persistence.schema-generation.scripts.drop-target" value="d:/drop-schema.sql"/> -->
+
+        </properties>
+    </persistence-unit>
+</persistence>

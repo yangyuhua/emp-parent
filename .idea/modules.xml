@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/emp-common/emp-common.iml" filepath="$PROJECT_DIR$/emp-common/emp-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emp-common-config/emp-common-config.iml" filepath="$PROJECT_DIR$/emp-common-config/emp-common-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emp-common-service/emp-common-service.iml" filepath="$PROJECT_DIR$/emp-common-service/emp-common-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emp-common-shiro/emp-common-shiro.iml" filepath="$PROJECT_DIR$/emp-common-shiro/emp-common-shiro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emp-common-web/emp-common-web.iml" filepath="$PROJECT_DIR$/emp-common-web/emp-common-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emp-parent.iml" filepath="$PROJECT_DIR$/emp-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emp-web/emp-web.iml" filepath="$PROJECT_DIR$/emp-web/emp-web.iml" />
+    </modules>
+  </component>
+</project>
